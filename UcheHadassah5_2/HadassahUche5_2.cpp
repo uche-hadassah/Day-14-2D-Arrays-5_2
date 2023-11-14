@@ -42,7 +42,7 @@ int main()
 	for (int i = 0; i < size; i++)
 	{
 			squareArray[i][i] = '*';//All situations where we have [i][i] will be set to '*'
-			squareArray[i][size - 1 - i] = '*';//Same for this
+			squareArray[i][size - 1 - i] = '*';//Same for when we have [i][size - 1 - i],it will be set to '*'
 	}
 	//Output the square array
 	for (int i = 0; i < size; i++)
