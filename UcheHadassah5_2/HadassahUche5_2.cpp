@@ -42,7 +42,17 @@ int main()
 		for (int j = 0; j < size; j++)
 		{
 			squareArray[i][i] = '*';
-			squareArray[i][j - 1 - i] = '*';
+			squareArray[i][(j - 1) - i] = '*';
 		}
 	}
+	//Output the square array
+	for (int i = 0; i < size; i++)
+	{
+		for (int j = 0; j < size; j++)
+		{
+			cout << squareArray[i][j];
+		}
+		cout << endl;
+	}
+	return 0;
 }
