@@ -39,11 +39,8 @@ int main()
 	//Set all the diagonals to *
 	for (int i = 0; i < size; i++)
 	{
-		for (int j = 0; j < size; j++)
-		{
 			squareArray[i][i] = '*';
-			squareArray[i][(j - 1) - i] = '*';
-		}
+			squareArray[i][size - 1 - i] = '*';
 	}
 	//Output the square array
 	for (int i = 0; i < size; i++)
